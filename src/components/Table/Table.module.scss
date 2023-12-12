@@ -6,5 +6,68 @@
     font-weight: 700;
     line-height: 32px;
     align-self: flex-start;
+    margin-bottom: 40px;
+  }
+
+  & .inputContainer {
+    position: relative;
+    margin-bottom: 30px;
+
+    & .filterField {
+      width: 100%;
+      height: 45px;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+
+      background-image: url('./../../assets/Search.svg');
+      background-repeat: no-repeat; /*Убираем повтор изображения*/
+      background-position: 13px; /*Позиционируем*/
+      padding-left: 35px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
+
+      &::placeholder {
+        font-family: Roboto, serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #D1D1D1;
+      }
+    }
+
+    & .testCount {
+      font-family: Roboto, serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #D1D1D1;
+      position: absolute;
+      right: 0;
+      top: 16px;  // TODO: возможно можно сделать через calc
+    }
+  }
+
+  & .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 85px;
+  }
+
+    & .text {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 500;
+      text-align: center;
+      color: #222222;
+    }
+
+    & .button {
+      background-color: #2EE5AC;
+      color: #fff;
+      width: 95px;
+      border-radius: 10px;
+      padding: 6px 10px;
+      outline: none;
+      border: none;
   }
 }

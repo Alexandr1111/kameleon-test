@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  color: #999999;
+  font-family: Roboto, serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  margin-bottom: 15px;
+
+  & .name {
+    padding-left: 12px;
+    width: 40%;
+  }
+
+  & .type {
+    width: 15%;
+  }
+
+  & .status {
+    width: 15%;
+  }
+
+  & .site {
+    width: 20%;
+  }
+}

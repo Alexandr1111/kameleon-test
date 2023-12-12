@@ -15,23 +15,33 @@
     font-size: 13px;
     font-weight: 500;
     color: #474747;
-    width: 400px;
+    width: 40%;
+    padding-left: 10px;
   }
 
   & .type {
-    width: 100px;
+    width: 15%;
   }
 
   & .status {
-    width: 100px;
+    width: 15%;
   }
 
   & .site {
-    width: 250px;
+    width: 20%;
   }
 
   & .actionBtn {
     width: 95px;
     border-radius: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 #00000026;
+  }
+
+  & + .row {
+    margin-top: 5px;
   }
 }
